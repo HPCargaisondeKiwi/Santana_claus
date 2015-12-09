@@ -1,17 +1,16 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 #Hugo Pezzo
-print("Tous les nombres doivent être positifs")
 a = int(input("Entrez un nombre a : "))
 b = int(input("Entrez un nombre b : "))
 z = 0
-if a>b:
+if a>b:					#Si les nombres sont tels que a>b, on les échangent
 	z = a
 	a = b
 	b = z
 x = a
 y = 0
-while x<=b:
+while x<=b:				#Si le modulo donne 0, cela veut dire que le nombre est un multiple de 5
 	if (x%5 == 0):
 		y = y+x
 	x = x+1
